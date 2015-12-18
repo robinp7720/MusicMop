@@ -1,0 +1,219 @@
+html, body
+  margin: 0
+  padding: 0
+  width: 100%
+
+*
+  box-sizing: border-box
+
+body
+  margin-bottom: 50px
+  box-sizing: content-box
+
+
+
+.info
+  height: 50px
+  width: 100%
+
+  position: fixed
+  bottom: 0
+
+  padding: 0
+  margin: 0
+  background: white
+
+.info.extended
+  height: 500px
+  .songs
+    height: calc(100% - 50px)
+    width: 100%
+    overflow: scroll
+
+.bar
+  background: #334
+
+.bar, .song
+  height: 50px
+  width: 100%
+  .image
+    display: block
+    float: left
+    height: 50px
+    img
+      height: 50px
+      border: none
+      padding: 0
+
+  i::before, a
+    display: block
+
+    float: left
+
+    color: #fff
+    text-decoration: none
+
+    height: 50px
+    line-height: 50px
+    padding: 0 10px
+
+
+    text-align: center
+    vertical-align: middle
+
+
+  a
+    font-family: "DejaVu Sans", SansSerif
+
+  .tracklist-controls
+    float: right
+
+.info .songs .song
+  border-bottom: 1px #ccc solid
+  .title
+    color: black
+
+.track
+  width: calc(19.9% - 10px)
+  margin: 5px
+  display: inline-block
+  img
+    width: 100%
+  a
+    display: block
+    color: #222
+    text-decoration: none
+    font-family: "DejaVu Sans", SansSerif
+    widith: 100%
+    height: 19px
+    overflow: hidden
+
+.directory
+  img
+    width: 100%
+    padding: 20px
+    margin: 0 auto
+  .image-container
+    background: #eee
+    margin-bottom: 5px
+    width: 100%
+
+@media (min-width: 1000px)
+  .track
+    width: calc(9.9% - 10px)
+
+.loader
+  width: 128px
+  height: 128px
+  background-color: white
+  border: solid #FFCDD2 5px
+  border-bottom: solid #F44336 5px
+  border-radius: 100%
+  position: fixed
+  top: 50%
+  left: 50%
+  margin-top: -64px
+  margin-left: -64px
+  -webkit-animation: scale-width 0.5s linear, rotating 1s linear infinite
+  -moz-animation: scale-width 0.5s linear, rotating 1s linear infinite
+  animation: scale-width 0.5s linear, rotating 1s linear infinite
+
+
+@-webkit-keyframes rotating
+  from
+    -webkit-transform: rotate(0deg)
+  to
+    -webkit-transform: rotate(360deg)
+
+
+
+@-webkit-keyframes scale-width
+  from
+    width: 0px
+    height: 0px
+    margin-top: 0px
+    margin-left: 0px
+  to
+    width: 128px
+    height: 128px
+    margin-top: -64px
+    margin-left: -64px
+
+
+@-webkit-keyframes colours
+  0%
+    background-color: #F44336
+  25%
+    background-color: #2196F3
+  50%
+    background-color: #4CAF50
+  75%
+    background-color: #FFEB3B
+  100%
+    background-color: #F44336
+
+@-moz-keyframes rotating
+  from
+    -moz-transform: rotate(0deg)
+  to
+    -moz-transform: rotate(360deg)
+
+
+
+@-moz-keyframes scale-width
+  from
+    width: 0px
+    height: 0px
+    margin-top: 0px
+    margin-left: 0px
+  to
+    width: 128px
+    height: 128px
+    margin-top: -64px
+    margin-left: -64px
+
+
+@-moz-keyframes colours
+  0%
+    background-color: #F44336
+  25%
+    background-color: #2196F3
+  50%
+    background-color: #4CAF50
+  75%
+    background-color: #FFEB3B
+  100%
+    background-color: #F44336
+
+@keyframes rotating
+  from
+    transform: rotate(0deg)
+  to
+    transform: rotate(360deg)
+
+
+
+@keyframes scale-width
+  from
+    width: 0px
+    height: 0px
+    margin-top: 0px
+    margin-left: 0px
+  to
+    width: 128px
+    height: 128px
+    margin-top: -64px
+    margin-left: -64px
+
+
+@keyframes colours
+  0%
+    background-color: #F44336
+  25%
+    background-color: #2196F3
+  50%
+    background-color: #4CAF50
+  75%
+    background-color: #FFEB3B
+  100%
+    background-color: #F44336
